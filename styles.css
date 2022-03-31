@@ -167,13 +167,12 @@ h2 {
 
 .project-info > h3 {
     font-size: 1.5em;
-    margin-bottom: 1em;
     text-decoration: underline;
 }
 
 .project-info > p {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .project-stack {
