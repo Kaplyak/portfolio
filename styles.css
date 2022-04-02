@@ -149,7 +149,6 @@ h2 {
     width: fit-content;
     border-radius: 10px;
     background-color: var(--secondary-color);
-    padding-bottom: 1em;
     margin-bottom: 1em;
 }
 
@@ -191,6 +190,10 @@ h2 {
     border-radius: 10px;
 }
 
+.project-buttons {
+    margin-bottom: 1em;
+}
+
 .project-code {
     padding: 1em;
     color: var(--main-bg-color);
@@ -205,6 +208,15 @@ h2 {
     color: var(--main-font-color);
     background-color: var(--main-bg-color);
     border:1px var(--button-color) solid;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.project-demo-greyed {
+    padding: 1em;
+    color: var(--main-font-color);
+    background-color: gray;
+    border:1px gray solid;
     text-decoration: none;
     border-radius: 50px;
 }
