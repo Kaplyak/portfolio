@@ -105,10 +105,18 @@ h1 {
 
 #top-buttons {
     margin-bottom: 1em;
+    padding: 1em;
 }
 
-#top-buttons {
-    padding: 1em;
+#top-buttons > a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#top-buttons > a:hover {
+    background-color: lightsalmon;
+    color: var(--main-bg-color);
+    border: none;
 }
 
 .button-filled {
@@ -201,6 +209,11 @@ h2 {
     margin-right: 1em;
     text-decoration: none;
     border-radius: 50px;
+    font-weight: 800;
+}
+
+.project-code:hover {
+    background-color: lightsalmon;
 }
 
 .project-demo {
@@ -212,6 +225,12 @@ h2 {
     border-radius: 50px;
 }
 
+.project-demo:hover {
+    background-color: lightsalmon;
+    color: var(--main-bg-color);
+    border: none;
+}
+
 .project-demo-greyed {
     padding: 1em;
     color: var(--main-font-color);
@@ -219,6 +238,33 @@ h2 {
     border:1px gray solid;
     text-decoration: none;
     border-radius: 50px;
+}
+
+#contact {
+    margin-bottom: 4em;
+}
+
+#contact > h2 {
+    margin-bottom: 1.5em;
+}
+
+#contact > p {
+    margin-top: 2em;
+}
+
+.contact-link {
+    padding: 1em 4em;
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    border:1px var(--button-color) solid;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 800;
+}
+
+.contact-link:hover {
+    background-color: lightsalmon;
+    color: var(--main-bg-color);
 }
 
 #stack-container {
@@ -294,6 +340,10 @@ h2 {
 
     #stack-container {
         grid-template-columns: repeat(4, auto);
+    }
+
+    .contact-link {
+        padding: 1em 10em;
     }
 }
 
