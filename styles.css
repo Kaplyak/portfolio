@@ -272,7 +272,7 @@ h2 {
     background-color: var(--secondary-color);
     border-radius: 10px;
     text-align: center;
-    width:90%;
+    width: fit-content;
     margin: auto;
     margin-bottom: 1em;
 }
@@ -318,7 +318,7 @@ h2 {
 
 #right-sticky {
     position: fixed;
-    right: -5em;
+    right: -4.5em;
     bottom: 8em;
     transform: rotate(90deg);
 }
