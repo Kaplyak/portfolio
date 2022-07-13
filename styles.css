@@ -66,13 +66,13 @@ a {
 
 /* END OF FONTS */
 
+
 :root {
     --main-bg-color: #222831;
     --secondary-color: #30475E;
     --main-font-color: #DDDDDD;
     --button-color: #F05454;
 }
-
 
 body {
     background-color: var(--main-bg-color);
@@ -267,30 +267,43 @@ h2 {
     color: var(--main-bg-color);
 }
 
-#stack-container {
+.stack-container {
     padding: 1em 3em;
     background-color: var(--secondary-color);
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 4em;
-    justify-content: center;
-    align-items:baseline;
     text-align: center;
-    width:fit-content;
+    width:90%;
     margin: auto;
+    margin-bottom: 1em;
 }
 
-#stack-container > div {
+.stack-title {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.stack-grid > div {
     width: 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.stack-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 4em;
+    justify-content: center;
+    align-items:baseline;
+}
+
 .stack-img {
     width: 3em;
     margin-bottom: 0.5em;
+}
+
+.filtered {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg) brightness(106%) contrast(101%);
 }
 
 #left-sticky {
@@ -305,13 +318,13 @@ h2 {
 
 #right-sticky {
     position: fixed;
-    right: -5.4em;
+    right: -5em;
     bottom: 8em;
     transform: rotate(90deg);
 }
 
 @media (min-width: 640px) {
-    #stack-container {
+    .stack-grid {
         grid-template-columns: repeat(3, auto);
     }
 }
